@@ -47,8 +47,8 @@ class Router:
                             action='store_true')
         parser.add_argument('--geometry', help='save line geometry, False: save attributes only', action='store_true')
         parser.add_argument('--outfile', dest='outfile', help='save routing results to csv|gpkg file', required=False,
-                            default='./route.csv')
-        parser.add_argument('--jsondir', dest='jsondir', help='set a json directory', required=False, default='./json/')
+                            default='../data/out/route.csv')
+        parser.add_argument('--jsondir', dest='jsondir', help='set json directory to save the details of the routes', required=False, default='../data/out/json')
         parser.add_argument('--json', help='load json file if exists, request and save it otherwise',
                             action='store_true')
         parser.add_argument('--router', dest='router', help='REST routing API', required=False, default='tomtom',
