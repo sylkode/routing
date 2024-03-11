@@ -1,9 +1,11 @@
 # Routing from origin destination file with REST API services
 
+## Purpose
+
 This script automatize the requests to online services to calculate shortest or quickest routes form origin to destination.
 
-The supported services are tomtom and openrouteservice.
-They both require a registration to get an API key. Their plans can be free or 
+The supported services are [tomtom](https://developer.tomtom.com/user/login) and [openrouteservice](https://openrouteservice.org/dev/#/login).
+They both require a registration to get an API key. They offer various plans, including a free plan. 
 
 It is also possible to install a local version of openrouteservice using a subset of the underlying OpenStreeMap dataset on your area of interest.
 
@@ -15,9 +17,9 @@ It is also possible to install a local version of openrouteservice using a subse
 `route.py --infile myfile.txt --routing tomtom --out myfile.txt`  
         reads start and end coordinates in a csv file with id,startlat,startlon,endlat,endlon
 
-## Quick documentation
+## Set up
 
-1. Prerequisite
+1. Prerequisite:  
 python 3 and above and the libraries used by the script
 2. Get an API key from the REST routing service
 and then save it in a text file under /any/path/to/api-key-textfile.txt
