@@ -20,13 +20,23 @@ It is also possible to install a local version of openrouteservice using a subse
 ## Set up
 
 1. Prerequisite:  
-python 3 and above and the libraries used by the script
-2. Get an API key from the REST routing service
+python 3 and above and the libraries used by the script:
+
+tested with:  
+geopandas==0.14.3  
+numpy==1.26.4  
+pandas==2.2.1  
+Requests==2.31.0  
+Shapely==2.0.3  
+
+3. Get an API key from the REST routing service
 and then save it in a text file under /any/path/to/api-key-textfile.txt
+
+
 3. check that output folders exist
 `python route.py --check`  
 The `--check` parameter will display all parameters on the standard output.
 
-You can check that everything works using the followinfg command line :   
+You can check that everything works using the following command line :   
 `python route.py --api-key /any/path/to/api-key-textfile.txt --route`
 
